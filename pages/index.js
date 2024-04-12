@@ -49,11 +49,6 @@ const Home = () => {
 
     try {
       const formDataToSend = new FormData();
-      /*
-      Object.entries(formData).forEach(([key, value]) => {
-        formDataToSend.append(key, value);
-      });
-      formDataToSend.append('file', formData.file); */
 
       for (const [key, value] of Object.entries(formData)) {
         if (key !== "file") {
